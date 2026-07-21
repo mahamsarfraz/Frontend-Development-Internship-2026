@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brew Haven Coffee Shop</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="bg-amber-900 text-white sticky top-0 z-50 shadow-md">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold tracking-wide">☕ Brew Haven</h1>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex gap-8 font-medium">
+          <li><a href="#" class="hover:text-amber-300">Home</a></li>
+          <li><a href="#" class="hover:text-amber-300">Menu</a></li>
+          <li><a href="#" class="hover:text-amber-300">About</a></li>
+          <li><a href="#" class="hover:text-amber-300">Contact</a></li>
+        </ul>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <ul id="mobile-menu" class="hidden md:hidden flex flex-col gap-4 px-6 pb-4 font-medium">
+        <li><a href="#" class="hover:text-amber-300">Home</a></li>
+        <li><a href="#" class="hover:text-amber-300">Menu</a></li>
+        <li><a href="#" class="hover:text-amber-300">About</a></li>
+        <li><a href="#" class="hover:text-amber-300">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-amber-50">
+      <div class="max-w-7xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center gap-10">
+        
+        <!-- Text Content -->
+        <div class="flex-1 text-center md:text-left">
+          <h2 class="text-4xl md:text-5xl font-bold text-amber-900 mb-6 leading-tight">
+            Freshly Brewed Happiness, <br class="hidden md:block" /> Every Single Day
+          </h2>
+          <p class="text-lg text-gray-700 mb-8 max-w-lg mx-auto md:mx-0">
+            At Brew Haven, we craft every cup with love using 100% organic beans, 
+            bringing you the rich aroma and taste you deserve.
+          </p>
+          <button class="bg-amber-700 hover:bg-amber-800 text-white text-lg font-semibold px-8 py-3 rounded-full shadow-lg transition">
+            Order Now
+          </button>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="flex-1">
+          <img 
+            src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800" 
+            alt="Fresh coffee cup" 
+            class="rounded-2xl shadow-2xl w-full object-cover"
+          />
+        </div>
+
+      </div>
+    </section>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
