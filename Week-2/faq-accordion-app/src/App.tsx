@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 
 export default function App() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
